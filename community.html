@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="logo">
-        <a href="index.html"><img src="McGee-FTH-Boeing_Website/Images/Free-Time_Logo.PNG" alt="The Free-Time Historian Logo"></a>
+        <a href="../BoeingHistoryWebsite/index.html"><img src="Images/Free-Time_Logo.PNG" alt="The Free-Time Historian Logo"></a>
         </div>
         <nav>
             <a href="about.html">About</a>
@@ -118,7 +118,7 @@
                     <h2>Vote Here:</h2>
                 </div>
                 <div class="pollForm">
-                    <form action="" id="pollField">
+                    <form action="#" id="pollField" action="return validateForm()" method="post">
                         <div class="pollFormText">
                             <p>A Short History of:</p>
                         </div>
@@ -142,20 +142,15 @@
                             <input type="radio" name="historyPoll" value="twa" id="twa">
                             <label for="twa">Trans-World Airlines</label>
                         </div>
-
                         <div class="submitPoll">
-                            <button id="submitButton">SUBMIT</button>
-                            <script type="text/javascript">
-                                document.getElementById("submitButton").submit = function () {
-                                    location.href = "";
-                                    startButton.style.color="black";};
-                            </script>
+                            <button id="submitButton" onclick="display()">SUBMIT</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
     <footer>
         <div class="jumpTop">
            <a href="#top">^ Jump to Top</a>
